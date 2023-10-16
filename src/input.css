@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .py-navbar-item {
+    @apply py-6
+  }
+
+  .pt-navbar-item {
+    @apply pt-6
+  }
+
+  .pb-navbar-item {
+    @apply pb-6
+  }
+
+  .px-navbar-item {
+    @apply px-3
+  }
+
+  .pl-navbar-item {
+    @apply pl-3
+  }
+
+  .pr-navbar-item {
+    @apply pr-3
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white bg-purple-600 py-2 px-4 rounded shadow-md hover:bg-purple-700 active:bg-purple-800 transition-colors;
+  }
+}
+
+body {
+  font-family: Gilroy;;
+  background-color: #e5e7eb;
+}
+
+.wysiwyg-content h3, 
+.wysiwyg-content h4 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.wysiwyg-content table > tbody > tr > td{
+  padding: 0.25rem 0.125rem;
+}
+.wysiwyg-content table > tbody > tr > td:first-child {
+  font-weight: bold;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>th {
+  padding: 0.5rem;
+}
+.table-sm>tbody>tr>td,
+.table-sm>thead>tr>th {
+  padding: 0.25rem;
+}
+#spec{
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 50px;
+  width: 100%;
+  background-color: #1E293B;
+  margin-top: 50px;
+}
+#spec #sleft{
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 48%;
+  border-right: 2px solid white;
+  text-align: center;
+  padding-right: 50px;
+}
+#spec #sleft h1{
+  color: white;
+} 
+#spec #sleft #smline{
+  width: 5%;
+  height: 2px;
+  border-color: white;
+  margin: 20px 0;
+}
+#spec #sleft p {
+  color: white;
+  width: 40;
+  font-size: 20px;
+ text-align: right;
+}
+#spec #sright{
+  width: 48%;
+  height: 100%;
+}
+.feat h3{
+  color: white;
+  margin-right: 5px
+}
+.feat i{
+  color: white;
+}
+#sright.feat{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+
+}
+.feat p{
+  color: white;
+margin-top: 15px;
+font-size: 12px;
+width: 50%;
+}
+.fdets{
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.fdets i{
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+
